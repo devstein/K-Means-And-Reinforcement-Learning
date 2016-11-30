@@ -56,7 +56,8 @@ class ImageSegmentation:
 		for i in range(k):
 			centroids[i] = X[randomPositions[i]]
 
-		iters = 0
+		# iteration number for debugging 
+		# iters = 0
 		
 		#label vectors to assign centroids
 		lastGrouping =  np.zeros(n, dtype=int)
@@ -75,9 +76,7 @@ class ImageSegmentation:
 			if (len(assignedClusters) != k):
 				for i in range(k):
 					if (np.any(assignedClusters != i)):
-						newGrouping[np.random.randint(0,n)] = i
-					print i, np.any(assignedClusters == i)
-				print assignedClusters 
+						newGrouping[np.random.randint(0,n)] = i 
 			#re-estimate the cluter centroids based on the data assigned
 			#to each cluster
 			#zero centroids
@@ -96,8 +95,8 @@ class ImageSegmentation:
 			for i in range(k):
 				centroids[i] *= 1/sumVector[i]
 
-			iters += 1
-			print iters 
+			# iters += 1
+			# print iters 
 
 		self.features = self.segmentFeatures(X, newGrouping, centroids)
 
