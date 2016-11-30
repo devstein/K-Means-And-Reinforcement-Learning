@@ -1,0 +1,88 @@
+1.
+
+(a)	Cluster Center: 1 6 
+	Cluster 1: {1,2,3}
+	Cluster 2: {4,9,12,6,10,9}
+
+
+	Iterationt 1: 
+
+		New cluster centers
+
+		Cluster 1 Center: 
+		1 + 2 + 3 = 6 
+		6 * 1/3 = 
+		2
+
+		Cluster 2 Center: 
+		4 + 9 + 12 + 6 + 10 + 9  = 50
+		50 * 1/6 = 25/3 = 8.33
+
+		New Data Assigments:
+
+		Cluster 1: 
+
+		{1,2,3,4, 6}
+
+		Cluster 2: 
+
+		{9, 12, 10, 9}
+
+	Iteration 2:
+
+		New cluster centers
+
+		Cluster 1 Center: 
+		1 + 2 + 3 + 4 + 6 = 16
+		16 * 1/5 = 
+		3.2
+
+		Cluster 2 Center: 
+		9 + 12 + 10 + 9  = 40
+		40 * 1/4 = 
+		10
+
+		New Data Assigments:
+
+		Cluster 1: 
+
+		{1,2,3,4, 6}
+
+		Cluster 2: 
+
+		{9, 12, 10, 9}
+
+
+(b) Yes we converged!
+
+_____________________________________________________________
+
+2.
+
+(a) Variance decreases as the value of K increases as there will
+	be less outliers in each data assignments because of more 
+	possible clusters
+
+(b) For a dataset with n instance, what value of k can you always
+	het a variance of 0? Why? State your answer in one sentence
+
+	When k=n duh! The algorithm will only converge when every cluster
+	is equal to a unique point in the dataset 
+
+_____________________________________________________________
+
+3. 
+
+Imagein you are designing a robot to run a maze.
+Reward +1 for excapig and +0 all other timez
+Episodic task
+	Goal is to maximize expected tota reward Rt 
+
+After running it for a while you realize it shows no improvement
+
+Does the reward function effectively communicate the goal of the agent?
+
+
+It does not! If the agent does not successfully exit the maze it learns nothing.
+The reward function must be able to incrementally reward and penalize the agent.
+For example, you could give small rewards to the agent for discovering new areas in the maze and penalize the robot for repeating the same route. 
