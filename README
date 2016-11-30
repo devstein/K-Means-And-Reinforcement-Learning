@@ -26,10 +26,10 @@
 #######################################################################################
 
 # Personal information  (BE SURE TO CHANGE THIS!)
-FIRSTNAME: Eric
-LASTNAME:  Eaton
-PENNKEY:   eeaton
-PENNID:    123456
+FIRSTNAME: Devin
+LASTNAME:  Steim
+PENNKEY:   devstein
+PENNID:    17504818
 
 # Which course are you enrolled in?  (enter 419 or 519)
 COURSE:  419 
@@ -48,7 +48,6 @@ SOURCESCONSULTED: |
     Chapter 2 of Pattern Recognition and Machine Learning by C. Bishop
     Chapter 5 of Machine Learning, A Probabilistic Perspective by K. Murphy
 
-
  
 ####################################################################################### 
 # Answers to Problem 1:  K-means
@@ -57,11 +56,11 @@ SOURCESCONSULTED: |
 #######################################################################################
 
 # Problem 1a: What are the cluster centroids for each of the next two iterations?
-KMEANS_CENTROIDS_ITER2: 1,2
-KMEANS_CENTROIDS_ITER3: 1,2
+KMEANS_CENTROIDS_ITER2: 2, 8.333
+KMEANS_CENTROIDS_ITER3: 2.5, 9.2
 
 # Problem 1b: Have the cluster centroids converged? (answer only YES or NO)
-KMEANS_CENTROIDS_CONVERGED: MAYBE
+KMEANS_CENTROIDS_CONVERGED: YES
 
 
 
@@ -72,10 +71,10 @@ KMEANS_CENTROIDS_CONVERGED: MAYBE
 
 # Problem 2a: What happens to the variance of a partition as K increases? (answer 
 #             only INCREASES, DECREASES, or STAYSSAME)
-KMEANS_VARIANCE_EFFECT: UNKNOWN
+KMEANS_VARIANCE_EFFECT: DECREASES
 
 # Problem 2b: For a dataset with $n$ instances, what value of k can you always get a variance of 0?
-KMEANS_VARIANCE_ZEROVARIANCE: UNKNOWN
+KMEANS_VARIANCE_ZEROVARIANCE: n
 
 
 
@@ -103,7 +102,7 @@ RL_REWARDS_IMPORTANCE: UNKNOWN
 #######################################################################################
 
 # Approximately how many hours did it take you to complete this assignment?
-FEEDBACK_NUM_HOURS: 0
+FEEDBACK_NUM_HOURS: 12
 
 # Please list any typos / errors you noticed in the assignment description or skeleton code
 FEEDBACK_ERRORS: |
