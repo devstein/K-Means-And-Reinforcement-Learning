@@ -18,6 +18,7 @@ def question2():
   answerNoise = 0.01
   return answerDiscount, answerNoise
 
+#prefers close exit risking the cliff
 def question3a():
   answerDiscount = 0.3
   answerNoise = 0.01
@@ -25,6 +26,7 @@ def question3a():
   return answerDiscount, answerNoise, answerLivingReward
   # If not possible, return 'NOT POSSIBLE'
 
+#perfers close exit but avoids cliff
 def question3b():
   answerDiscount = 0.3
   answerNoise = 0.1
@@ -32,31 +34,33 @@ def question3b():
   return answerDiscount, answerNoise, answerLivingReward
   # If not possible, return 'NOT POSSIBLE'
 
+#prefers distant exit risking cliff
 def question3c():
-  answerDiscount = 0.9
-  answerNoise = 0.01
+  answerDiscount = 0.8
+  answerNoise = 0.1
   answerLivingReward = 0.0
   return answerDiscount, answerNoise, answerLivingReward
   # If not possible, return 'NOT POSSIBLE'
 
+#prefers distant exit but avoids cliff
 def question3d():
   answerDiscount = 0.9
   answerNoise = 0.2
-  answerLivingReward = 0.1
+  answerLivingReward = 0.0
   return answerDiscount, answerNoise, answerLivingReward
   # If not possible, return 'NOT POSSIBLE'
 
 def question3e():
   answerDiscount = 0.9
   answerNoise = 0.2
-  answerLivingReward = 0.0
+  answerLivingReward = 6.0
   return answerDiscount, answerNoise, answerLivingReward
   # If not possible, return 'NOT POSSIBLE'
 
 def question6():
   answerEpsilon = None
   answerLearningRate = None
-  return answerEpsilon, answerLearningRate
+  return 'NOT POSSIBLE'
   # If not possible, return 'NOT POSSIBLE'
   
 if __name__ == '__main__':

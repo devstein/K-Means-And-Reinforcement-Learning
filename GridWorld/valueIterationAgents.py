@@ -7,9 +7,6 @@
 # For more info, see http://inst.eecs.berkeley.edu/~cs188/sp09/pacman.html
 
 
-# https://github.com/yuxinzhu/reinforcement/blob/master/valueIterationAgents.py
-# https://github.com/mkapnick/pacman/blob/master/valueIterationAgents.py
-
 import mdp, util
 
 from learningAgents import ValueEstimationAgent
